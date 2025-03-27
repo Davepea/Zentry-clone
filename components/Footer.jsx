@@ -17,10 +17,10 @@ const Footer = () => {
             &copy; Nova 2024. All rights reserved
         </p>
         <div className='flex justify-center gap-4 md:justify-start'>
-            {socialLinks.map((link)=>(
-                <Link key={link} href={link.href} target='_blank' rel="noopener moreferrer" className='text-black transition-colors duration-500 ease-in-out hover:text-white'>
-                    {link.icon}
-                </Link>
+        {socialLinks.map((link) => (
+            <Link key={link.href} href={link.href} target="_blank" rel="noopener noreferrer" className="text-black transition-colors duration-500 ease-in-out hover:text-white">
+                {link.icon}
+            </Link>
             ))}
         </div>
         <Link href="#privacy-policy" className='text-center text-sm hover:underline md:text-right'>
